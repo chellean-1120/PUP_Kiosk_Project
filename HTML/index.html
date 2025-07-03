@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <meta charset="utf-8"/>
+    <title>PUP Kiosk</title>
+    <link rel="icon" type="image/x-icon" href="../assets/PUP_logo.png">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <img src="../assets/PUP_logo.png" alt="PUP logo">
+      <h1>PUP KIOSK</h1>
+    </header>
+
+    <div class="main-container">
+      <div class="img-description-container">
+        <div id="display-container">
+          <img id="place-image" src="../assets/front-gate.jpg">
+          <div id="title-container">
+            <p id="image-title">Hover over the PUP Map to display image</p>
+          </div>
+        </div>
+      </div>
+      <div class="map-container">
+        <img src="../assets/pup-map-1.png" usemap="#image-map">
+        <map name="image-map" id="map">
+          <area target="" alt="Track and Football Oval" href="#" coords="599,473,599,452,607,428,707,293,730,275,755,272,785,274,806,290,820,305,826,322,831,343,829,362,823,375,725,515,708,527,691,534,674,537,652,534,634,526,616,510,602,491" shape="poly"
+          onmouseover="displayBox(this.alt, pup.oval, '../assets/univ-imgs/oval.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/oval1.jpg')"></area>
+          <area target="" alt="Mabini Shrine" href="#" coords="589,248,617,271,601,298,575,274" shape="poly" 
+          onmouseover="displayBox(this.alt, pup.mabini_shrine, '../assets/univ-imgs/mabini-shrine.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/mabini-shrine1.jpg')"></area>
+          <area target="" alt="Freedom Park" href="#" coords="529,342,567,254,522,253,479,286,495,307,522,291,534,311,507,328,506,342,517,354" shape="poly"
+          onmouseover="displayBox(this.alt, pup.freedom_park, '../assets/univ-imgs/freedom-park.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/freedom-park1.jpg')"></area>
+          <area target="" alt="Flag Pole" href="#" coords="504,306,519,298,527,313,513,320" shape="poly"
+          onmouseover="displayBox(this.alt, pup.flagpole, '../assets/univ-imgs/flagpole.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/flagpole1.jpg')"></area>
+          <area target="" alt="Obelisk" href="#" coords="541,211,22" shape="circle"
+          onmouseover="displayBox(this.alt, pup.obelisk, '../assets/univ-imgs/obelisk.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/obelisk1.jpg')"></area>
+          <area target="" alt="North Wing" href="#" coords="413,404,382,351,470,303,483,307,498,334,495,352" shape="poly"
+          onmouseover="displayBox(this.alt, pup.north_wing, '../assets/univ-imgs/north-wing.jpg')" onmouseout="removeDisplay()"></area>
+          <area target="" alt="West Wing" href="#" coords="239,350,239,330,257,303,271,300,361,353,335,401" shape="poly"
+          onmouseover="displayBox(this.alt, pup.west_wing, '../assets/univ-imgs/west-wing.jpg')" onmouseout="removeDisplay()"></area>
+          <area target="" alt="East Wing" href="#" coords="345,422,401,422,399,525,392,538,357,537,344,529" shape="poly"
+          onmouseover="displayBox(this.alt, pup.east_wing, '../assets/univ-imgs/east-wing.jpg')" onmouseout="removeDisplay()"></area>
+          <area target="" alt="Dome" href="#" coords="365,356,339,405,346,418,402,418,406,408,378,357" shape="poly"
+          onmouseover="displayBox(this.alt, pup.dome, '../assets/univ-imgs/dome.jpg')" onmouseout="removeDisplay()"></area>
+          <area target="" alt="South Wing" href="#" coords="340,489,292,516,224,398,272,374,305,418,326,405,337,424,312,439" shape="poly"
+          onmouseover="displayBox(this.alt, pup.south_wing, '../assets/univ-imgs/south-wing.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/south-wing1.jpg')"></area>
+          <area target="" alt="Interfaith Chapel" href="#" coords="491,461,61" shape="circle"
+          onmouseover="displayBox(this.alt, pup.chapel, '../assets/univ-imgs/chapel.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/chapel1.jpg')"></area>
+          <area target="" alt="University Canteen - Sampaguita Building" href="#" coords="181,282,197,254,244,281,228,306" shape="poly"
+          onmouseover="displayBox(this.alt, pup.student_canteen, '../assets/univ-imgs/student-canteen.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/student-canteen1.jpg')"></area>
+          <area target="" alt="Charlie Del Rosario Hall" href="#" coords="159,185,177,154,279,212,261,245" shape="poly"
+          onmouseover="displayBox(this.alt, pup.charlie_bldg, '../assets/univ-imgs/charlie-bldg.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/charlie-bldg1.jpg')"></area>
+          <area target="" alt="Laboratory High School" href="#" coords="134,77,260,153,269,136,144,62,150,51,235,103,245,86,160,36,165,27,238,71,246,55,176,9" shape="poly"
+          onmouseover="displayBox(this.alt, pup.lab_high, '../assets/univ-imgs/lab-high.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/lab-high1.jpg')"></area>
+          <area target="" alt="Water Tank" href="#" coords="289,63,12" shape="circle"
+          onmouseover="displayBox(this.alt, pup.water_tank, '../assets/univ-imgs/water-tank.jpg')" onmouseout="removeDisplay()"></area>
+          <area target="" alt="Ninoy Aquino Library and Learning Resources Center" href="#" coords="305,28,340,15,363,84,433,60,444,97,374,120,402,192,364,206" shape="poly"
+          onmouseover="displayBox(this.alt, pup.library, '../assets/univ-imgs/library.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/library1.jpg')"></area>
+          <area target="" alt="Tahanan ng Alumni" href="#" coords="512,75,496,75,500,35,515,34" shape="poly"
+          onmouseover="displayBox(this.alt, pup.tahanan_alumni, '../assets/univ-imgs/tahanan-alumni.jpg')" onmouseout="removeDisplay()"></area>
+          <area target="" alt="Swimming Pool" href="#" coords="524,41,521,76,612,86,613,48" shape="poly"
+          onmouseover="displayBox(this.alt, pup.swimming_pool, '../assets/univ-imgs/swimming-pool.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/swimming-pool1.jpg')"></area>
+          <area target="" alt="Gymnasium and Sports Center" href="#" coords="640,21,635,94,751,105,755,30" shape="poly"
+          onmouseover="displayBox(this.alt, pup.gymnasium, '../assets/univ-imgs/gymnasium.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/gymnasium1.jpg')"></area>
+          <area target="" alt="Outdoor Basketball and Volleyball Court" href="#" coords="574,117,570,171,655,177,659,122" shape="poly"
+          onmouseover="displayBox(this.alt, pup.outdoor_bb_vb_court, '../assets/univ-imgs/outdoor-bb-vb-court.jpg')" onmouseout="removeDisplay()"></area>
+          <area target="" alt="Tennis Court" href="#" coords="676,122,673,173,702,176,703,124,714,125,713,178,737,177,742,126" shape="poly"
+          onmouseover="displayBox(this.alt, pup.tennis_court, '../assets/univ-imgs/tennis-court.jpg')" onmouseout="removeDisplay()"></area>
+          <area target="" alt="Visitor Information Center" href="#" coords="778,174,776,204,802,204,803,174" shape="poly"
+          onmouseover="displayBox(this.alt, pup.info_center, '../assets/univ-imgs/info-center.png')" onmouseout="removeDisplay()"></area>
+          <area target="" alt="Lagoon" href="#" coords="365,233,377,213,400,212,410,198,408,180,414,159,424,144,449,153,450,173,426,204,421,225,411,237,396,257,378,268,334,276,334,268,370,263" shape="poly"
+          onmouseover="displayBox(this.alt, pup.lagoon, '../assets/univ-imgs/lagoon.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/lagoon1.jpg')"></area>
+          <area target="" alt="Linear Park" href="#" coords="235,499,265,491,197,374,106,93,100,97" shape="poly"
+          onmouseover="displayBox(this.alt, pup.linear_park, '../assets/univ-imgs/linear-park.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/linear-park1.jpg')"></area>
+          <area target="" alt="PUP Sta. Mesa Ferry Station" href="#" coords="242,524,264,515,273,547,253,552" shape="poly"
+          onmouseover="displayBox(this.alt, pup.ferry_station, '../assets/univ-imgs/ferry-station.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/ferry-station1.jpg')"></area>
+          <area target="" alt="Pasig River" href="#" coords="2,1,39,4,87,78,240,550,6,551" shape="poly"
+          onmouseover="displayBox(this.alt, pup.pasig_river, '../assets/univ-imgs/pasig-river.jpg')" onmouseout="removeDisplay()"></area>
+          <area target="" alt="Printing Press Building" href="#" coords="79,42,92,36,111,62,97,70" shape="poly"
+          onmouseover="displayBox(this.alt, pup.printing_press, '../assets/univ-imgs/printing-press.jpg')" onmouseout="removeDisplay()"></area>
+          <area target="" alt="Amphitheater" href="#" coords="395,309,373,317,351,305,338,285,379,277" shape="poly"
+          onmouseover="displayBox(this.alt, pup.amphitheater, '../assets/univ-imgs/amphitheater.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/amphitheater1.jpg')"></area>
+          <area target="" alt="Grandstand" href="#" coords="602,355,645,301,663,310,620,369" shape="poly"
+          onmouseover="displayBox(this.alt, pup.grandstand, '../assets/univ-imgs/grandstand.jpg')" onmouseout="removeDisplay()"></area>
+          <area target="" alt="Student Canteen" href="#" coords="213,258,225,237,251,251,240,273" shape="poly"
+          onmouseover="displayBox(this.alt, pup.outside_canteen, '../assets/univ-imgs/outside-canteen.jpg')" onmouseout="removeDisplay()"></area>
+          <area target="" alt="PUP Souvenir Shop" href="#" coords="631,241,645,247" shape="rect"
+          onmouseover="displayBox(this.alt, pup.souvenir_shop, '../assets/univ-imgs/souvenir-Shop.jpg')" onmouseout="removeDisplay()"></area>
+          <area target="" alt="Nutrition and Dietetics Building" href="#" coords="407,534,550,553" onmouseover="displayBox(this.alt, pup.outside_canteen, '../assets/univ-imgs/nutrition-building.jpg')" onmouseout="removeDisplay()" shape="rect"></area>
+          <area target="" alt="Human Kinetics Building" href="#" coords="465,10,491,130" shape="rect"
+          onmouseover="displayBox(this.alt, pup.hk_building, '../assets/univ-imgs/human-kinetics.jpg')" onmouseout="removeDisplay()" onclick="nextImage('../assets/univ-imgs/human-kinetics1.jpg')"></area>
+          <area target="" alt="PUP Pylon" href="#" coords="823,193,841,210" shape="rect"
+          onmouseover="displayBox(this.alt, pup.pylon, '../assets/univ-imgs/pylon.jpg')" onmouseout="removeDisplay()"></area>
+          <area target="" alt="Guard House" href="#" coords="804,238,823,250"shape="rect"
+          onmouseover="displayBox(this.alt, pup.guard_house, '../assets/univ-imgs/guard-house.jpg')" onmouseout="removeDisplay()"></area>
+        </map>
+
+        </div>
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <p>Copyrights © 2024</p>
+    </footer>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

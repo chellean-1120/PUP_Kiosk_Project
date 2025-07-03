@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'League Spartan';
+  src: url("..\\fonts\\LeagueSpartan-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url("..\\fonts\\LeagueSpartan-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url("..\\fonts\\LeagueSpartan-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: League Spartan;
+  font-weight: 800;
+}
+
+/*-------------------------------------------------------    HEADER   -------------------------------------------------------*/
+
+.header {
+  margin-top: -100px;
+  height: 100px;
+  background-color: #800000;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 70px;
+  height: auto;
+  margin: 0; 
+  vertical-align: middle; 
+  border-radius: 50px;
+  border-width: 1px;
+  padding-right: 20px;
+}
+
+.header h1 {
+  font-size: 50px;
+  color: #DAA520;
+  text-shadow: 2px 3px #232222;
+}
+
+/*-------------------------------------------------------    MAIN CONTAINER   -------------------------------------------------------*/
+
+body {
+  overflow:hidden;
+}
+
+.main-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url('../assets/aerial-view.png');
+}
+
+
+/*-------------------------------------------------------    DESCRIPTION CONTAINER   -------------------------------------------------------*/
+
+.img-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+}
+
+#display-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 480px;
+  margin: 30px 10px 40px 10px;
+}
+
+#title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  color:#800000;
+  width: 500px;
+  display: flex;
+  margin-top: 8px;
+}
+
+#image-title {
+  margin-top: 20px;
+}
+
+/*-------------------------------------------------------    MAP CONTAINER   -------------------------------------------------------*/
+
+.map-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  width: 100%;
+}
+
+.map-image{
+  margin-top: 800px;
+  width: auto;
+  height: relative;
+}
+
+/*-------------------------------------------------------   IMAGE   -------------------------------------------------------*/
+
+#place-image {
+  width: 540px;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 20px;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/*-------------------------------------------------------   PLACES DESCRIPTION  -------------------------------------------------------*/
+
+#heading {
+  color: #DAA520;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 170px;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  border-color: #DAA520;
+  text-shadow: 1.5px 1.5px #232222;
+}
+
+#display {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  height: auto;
+  background-color: #800000;
+  padding: 6px;
+}
+
+#place-description {
+  font-weight: normal;
+  text-align: justify;
+  color: beige;
+  padding: 10px;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#display img {
+  width: 100px;
+  height: auto;
+  padding: 5px;
+}
+
+/*-------------------------------------------------------   FOOTER   -------------------------------------------------------*/
+
+.footer {
+  height: 80px;
+  background-color: #800000;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#DAA520;
+  font-size: large;
+}
